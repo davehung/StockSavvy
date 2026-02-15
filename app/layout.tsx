@@ -16,12 +16,12 @@ export const metadata: Metadata = {
   title: "StockSavvy",
   description: "An AI-Powered Stock Buy and Sell Timing Prediction & Recommendation App",
 };
-
-export default function RootLayout({
-  children,
+   
+const RootLayout=({
+  children
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) =>{
   return (
     <html lang="en" className="dark">
       <body
@@ -32,3 +32,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+export default RootLayout
